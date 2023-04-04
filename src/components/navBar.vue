@@ -3,10 +3,10 @@
   <nav>
 
       <ul>
-        <li><a to="/PageDAccueil">Accueil</a></li>
-        <li><a to="/text">Textes</a></li>
-        <li><a to="/presentationAuteur">Auteur</a></li>
-        <li><a to="/contact">Contact</a></li>
+        <li><router-link to="/PageDAccueil">Accueil</router-link></li>
+        <li><router-link to="/text">Textes</router-link></li>
+        <li><router-link to="/presentationAuteur">Auteur</router-link></li>
+        <li><router-link to="/Contact">Contact</router-link></li>
       </ul>
     </nav>
   </template>

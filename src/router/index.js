@@ -8,6 +8,7 @@ import Text from '../views/text.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    
     {
       path: '/',
       name: 'home',
@@ -32,7 +33,7 @@ const router = createRouter({
       component: PresentationAuteur
       },
       {
-          path: '/contact',
+          path: '/Contact',
       name: 'Contact',
       component: Contact
       },

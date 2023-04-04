@@ -3,10 +3,10 @@
   <nav>
 
       <ul>
-        <li><a href="./PageDAccueil.html">Accueil</a></li>
-        <li><a href="./Index.html">Textes</a></li>
-        <li><a href="./PresentationAuteur.html">Auteur</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a to="/PageDAccueil">Accueil</a></li>
+        <li><a to="/text">Textes</a></li>
+        <li><a to="/presentationAuteur">Auteur</a></li>
+        <li><a to="/contact">Contact</a></li>
       </ul>
     </nav>
   </template>

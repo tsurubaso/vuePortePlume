@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Contact.vue</h1>
+    <div class="page">
+        <h1>Contact</h1>
     </div>
 </template>
 

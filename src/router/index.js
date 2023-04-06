@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Contact from '../views/Contact.vue'
-import PageDAccueil from '../views/PageDAccueil.vue'
+import PageDAccueil from '../views/PageDAccueil.vue';
 import PresentationAuteur from '../views/PresentationAuteur.vue'
 import Text from '../views/text.vue'
 
@@ -12,15 +12,7 @@ const router = createRouter({
       path: '/',
       name: 'PageDAccueil',
       component: PageDAccueil
-      },
-    
-    
-
-    {
-      path: '/PageDAccueil',
-      name: 'PageDAccueil',
-      component: PageDAccueil
-      },
+    },
       {
           path: '/presentationAuteur',
       name: 'PresentationAuteur',

@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import './assets/main.css'
 import Navbar from './components/navBar.vue'
+import Vue3EasyDataTable from 'vue3-easy-data-table';
+import 'vue3-easy-data-table/dist/style.css';
 
 // Icons
 import * as FaIcons from "oh-vue-icons/icons/fa";
@@ -16,7 +18,9 @@ const app = createApp(App)
 app.use(router)
 
 app.component("v-icon", OhVueIcon);
-app.component('nav-bar', Navbar)
+app.component('nav-bar', Navbar);
+app.component('EasyDataTable', Vue3EasyDataTable);
+
 
 app.mount("#app");
 

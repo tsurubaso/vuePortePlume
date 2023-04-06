@@ -14,12 +14,14 @@
       :search-value="searchValue"
       :headers="headers"
       :items="items"
-      @click-row="showRow"
+      
+      @click-row="navigateToPDF"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useRouter } from "vue-router";
 import { ref } from "vue";
 import type {
   Header,
@@ -27,6 +29,24 @@ import type {
   ClickRowArgument,
   SortType,
 } from "vue3-easy-data-table";
+
+
+const router = useRouter();//
+const itemsSelected = ref([]);//
+
+const navigateToPDF = (item: ClickRowArgument) => {
+  const id = item['ID'];
+  router.push({ name: "pdf", params: { id } });
+  console.log(JSON.stringify(item.ID));
+};
+
+
+
+
+
+
+
+
 
 const searchField = ref("Name");
 const searchValue = ref("");
@@ -193,7 +213,5 @@ const items: Item[] = [
   },
 ];
 
-const showRow = (item: ClickRowArgument) => {
-  console.log(JSON.stringify(item.ID));
-};
+
 </script>

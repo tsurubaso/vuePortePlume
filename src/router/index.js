@@ -5,6 +5,9 @@ import PageDAccueil from '../views/PageDAccueil.vue';
 import PresentationAuteur from '../views/PresentationAuteur.vue'
 import Text from '../views/text.vue'
 
+
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,7 +27,7 @@ const router = createRouter({
       component: Contact
       },
       {
-          path: '/text',
+          path: '/text/:id',
       name: 'Text',
       component: Text
       }

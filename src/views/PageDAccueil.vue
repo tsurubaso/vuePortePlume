@@ -36,17 +36,14 @@ const itemsSelected = ref([]);//
 
 const navigateToPDF = (item: ClickRowArgument) => {
   const id = item['ID'];
-  router.push({ name: "pdf", params: { id } });
-  console.log(JSON.stringify(item.ID));
+  console.log(id)
+ // console.log(item.ID)
+ // console.log(JSON.stringify(item.ID));
+  
+  router.push({ name: "Text", params: { id } });
+
+  
 };
-
-
-
-
-
-
-
-
 
 const searchField = ref("Name");
 const searchValue = ref("");

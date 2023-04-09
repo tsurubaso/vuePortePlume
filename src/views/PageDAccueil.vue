@@ -40,7 +40,7 @@ const navigateToPDF = (item: ClickRowArgument) => {
  // console.log(item.ID)
  // console.log(JSON.stringify(item.ID));
   
-  router.push({ name: "Text", params: { id } });
+  router.push({ name: "Text", params: { id:id } });
 
   
 };

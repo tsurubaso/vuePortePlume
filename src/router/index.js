@@ -27,7 +27,7 @@ const router = createRouter({
       component: Contact
       },
       {
-          path: '/text/:id',
+          path: '/text?id=:id',
       name: 'Text',
       component: Text
       }
